@@ -2,28 +2,28 @@
     font-family: Arial, Helvetica, sans-serif;
     font-style:normal
     }
-    header, .topMenu ul,.topIcons {
+    header nav .topMenu ul, header nav .topIcons ul, header{
         display: flex; /* use flexbox to align items horizontally */
         list-style: none; /* remove default list styles */
         padding: 0; /* remove default padding */
     }
 
-    
-    .topMenu ul li{
+    header ul li{
         font-size: 2rem;
+       /* add some spacing between list items */
+    }
+
+    .topMenu ul li{
         margin-top: 100px;
-        margin-left: 20px; /* add some spacing between list items */
+        margin-left: 20px;
     }
-    .topMenu ul li a:visited{
-        color:none;
-        
-        
+    .topIcons ul li{
+        margin-left:20px;
+        margin-top:50px;
     }
-
-
-    .topIcons{
-        
-        margin-left: 20px; /* add some spacing between list items */
-        margin-bottom: 10px;
-
+    .topMenu a{
+        color:black;
+        text-decoration:none;
+       
     }
+    
