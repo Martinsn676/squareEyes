@@ -6,33 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>squareEyes</title>
     <link href="index.css" rel="stylesheet">
+    
 </head>
 
 <body>
-    <header>
-        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-        <nav><section class="topMenu"><ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="collection.html">Browse</a></li>
-        <li><a href="collection.html">Discover</a></li>
-        <li><a href="index.html">Friends</a></li>
-    </ul></section></nav>
+<header>
+    <section class="topMenuButtons">
+        
+            <a href="index.html" ><img src="images/logo.png" alt="logo" class="onlyTabletPC"></a>   
+        
+        
+            <nav class="topMenuText">
+                <a href="index.html" class="active cleanCta  hoverCta">Home</a>                <a href="collection.html" class="cleanCta hoverCta">Browse</a>
+                <a href="collection.html" class="cleanCta hoverCta">Discover</a>
+                
+                <a href="index.html" class="cleanCta hoverCta">Friends</a>
+            </nav>
+                <nav class="topMenuIcons">
+                <a href="index.html" class="hoverCta onlyMobile"><img src="images/mBackIcon.png" alt="back, go to last page"></a>
+                <a href="index.html" class="hoverCta onlyMobile"><img src="images/logo.png" alt="home, go to homepage" class="mobileLogo"></a>
+                <a href="cart.html" class="hoverCta"><img src="images/basketIcon.png" alt="basket, go to"></a>
+                <a href="library.html" class="hoverCta"><img src="images/libraryIcon.png" alt="library, go to"></a>
+                <a href="profile.html" class="hoverCta"><img src="images/profileIcon.png" alt="profile, go to"></a>
+            </nav>
+        </section>   
+</header>
 
-    <nav><section class="topIcons"><ul>
-        <li><a href="cart.html"><img src="images/basketIcon.png" alt="basket, go to"></a></li>
-        <li><a href="library.html"><img src="images/libraryIcon.png" alt="library, go to"></a></li>
-        <li><a href="profile.html"><img src="images/profileIcon.png" alt="profile, go to"></a></li>
-</ul></section></nav>
- </header>
     <main>
-        <h1>Welcome!</h1>
-        <img src="images\Design.png" alt="decoration">
+       
+        <section class="frontPage">
+        <img id="design" src="images/croppedDesign.png" alt="decoration">
+        <nav class="frontPageMenu">
+            <a href="collection.html" class="hoverCta darkCta ">Browse</a>
+            <a href="collection.html" class="hoverCta darkCta ">Discover</a>
+            <a href="index.html" class="hoverCta darkCta ">Friends</a>
+        
+        </nav>
+
+
+        <h3 class="hoverCta darkCta"> Test </h3>
 
     </main>
-    
+
     <footer>
-
-
 
     </footer>
 </body>

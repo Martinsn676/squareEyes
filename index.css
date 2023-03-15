@@ -1,29 +1,163 @@
-.topMenu{
-    font-family: Arial, Helvetica, sans-serif;
-    font-style:normal
+
+   html{
+    font-size: 16px; /* set the font-size of the root element to 16px */
+   }
+   
+   /*set the size of the text in rem*/
+   body{
+    min-width:400px
+   }
+  
+   a, p{
+    font-size: 2.5rem;
+    
+   }
+   .flex1{flex:1;}.flex2{flex:2;}.flex3{flex:3;}
+  /*
+   a,p,h1,h2,h3,h4,h5,h6,form,label,button, input,img{border-style: dashed;border-color: red;}
+   */
+
+/*=========================Header==========================*/
+
+@media (min-width: 80rem) {
+
+   .header, .topMenuButtons{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+   }
+   
+   .topMenuText a, .topMenuIcons a{
+       
+        margin-left:1.32rem;
     }
-    header nav .topMenu ul, header nav .topIcons ul, header{
-        display: flex; /* use flexbox to align items horizontally */
-        list-style: none; /* remove default list styles */
-        padding: 0; /* remove default padding */
+    .onlyMobile{
+        display:none;
+    }
+  }
+
+@media (max-width: 80rem) and (min-width:60rem) {
+  
+    .topMenu{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .topMenuButtons{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       }
+
+    
+    .topMenuText a{
+       
+        margin-left:0.35rem;
     }
 
-    header ul li{
-        font-size: 2rem;
-       /* add some spacing between list items */
+    .topMenuIcons a{
+        margin-left:2rem;
     }
 
-    .topMenu ul li{
-        margin-top: 100px;
-        margin-left: 20px;
+    .onlyMobile{
+        display: none;
+    
     }
-    .topIcons ul li{
-        margin-left:20px;
-        margin-top:50px;
+  }
+
+@media (max-width: 60rem) {
+  
+    .topMenuIcons{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:row;
+       }
+       
+    .topLogo, .topMenuText a, .onlyTabletPC{
+        display: none;
+    
     }
-    .topMenu a{
+    
+    .topMenuIcons a{
+       
+        margin-left:0.4rem;
+    }
+    .mobileLogo{
+        height: 6.5Rem;
+    }
+  }
+
+/*=========================Buttons==================*/
+  
+.topMenuButtons nav{
+    display:flex;
+   }
+    
+    .darkCta{
+        
+        background-color: rgb(70, 69, 69);
+        padding:10px;
+        border-radius: 20px;
+        color:white;
+        text-decoration: none;
+        margin: 10px;  
+        width: 10rem;
+        text-align: center;
+        
+    }
+
+    .cleanCta{
         color:black;
         text-decoration:none;
+        padding:5px; 
        
+    }
+    
+    .active{
+        transform: scale(1.2);
+        transform-origin: center;
+        align-items: center;
+    }
+    
+    
+    .hoverCta:hover{
+        
+        transform: scale(1.1);
+        transform-origin: center;
+        transition: transform 0.2s ease-in-out;
+    }
+   
+/*============================Front page===========================*/
+
+    #design{
+        height: 100%;
+        width: 100%;
+        position: center;
+        size: cover;
+        max-width: 950px;
+       
+    }
+     
+    .frontPageMenu {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin:0 auto;
+        flex-direction: column;
+
+        
+    }
+
+/*=====================Product page=====================*/
+ 
+.product{
+        padding:10px;
+        margin:0 auto;
     }
     
