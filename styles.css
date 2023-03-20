@@ -1,0 +1,141 @@
+
+/*
+a,p,h1,h2,h3,h4,h5,h6,form,label,button, input,img{border-style: dashed;border-color: red;}
+*/
+
+/*========== Media Changes ===========*/
+
+/*@media (min-width:376px) and (max-width:768px){
+    header
+    header .onlyMobile{
+        display:none;
+    }
+}*/
+
+
+@media (min-width:376px){
+    
+    header .onlyMobile{
+        display:none;
+    }
+    .headerIcons a, .headerIcons img{ 
+        height: 50px;
+        margin-left: 5px;
+    }
+    .headerText a{
+        margin:5px;
+    }
+}
+
+@media (max-width:375px){
+    header .headerMenu {
+        flex-direction: column;}
+
+    header .onlyTablet{
+        display:none;}
+
+    header .headerIcons a, .headerIcons img{ 
+        height:40px;}
+    
+    header .headerText{
+        height: 30px;
+        border-bottom: none;
+        margin-left: 20px;}
+
+    main .frontPage .frontPageText{
+        display:none;}
+
+}
+
+/*========= Call to action =========*/
+
+.darkCta{
+        
+    background-color: rgb(70, 69, 69);
+    padding:10px;
+    border-radius: 20px;
+    color:white;
+    text-decoration: none;
+    margin: 10px;  
+    width: 10rem;
+    text-align: center; }
+
+.cleanCta a{
+    color:black;
+    text-decoration:none;   }
+
+.active{
+    transform: scale(1.2);
+    transform-origin: center;
+    align-items: center;    }
+
+
+        
+.headerMenu nav{display:flex;}.hoverCta a:hover{
+    
+    transform: scale(1.1);
+    transform-origin: center;
+    transition: transform 0.2s ease-in-out; }
+
+/*========= Standard statuses =========*/
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+       }
+    
+.flexRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+
+.textClose p{
+    margin-top: -15px;  }
+
+.alignCenter{
+    align-items: center; 
+}
+/*============ Home Page ============*/
+
+.frontPage img{
+    height: 100%;
+    width: 100%;
+    size: cover;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/*============ Products Page ============*/
+body{
+    margin: 0 auto; 
+}
+.productsView {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 900px;
+}
+.productsView a{
+    margin: 2px;
+}
+/*========= Header =========*/
+
+.headerText{
+    
+    height: 30px;
+    border-bottom: 1px solid black;
+    margin-left: 20px;
+}
+
+
+/*========= Footer =========*/
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items:first baseline; 
+    width:300px;
+    
+    border-top: 1px solid black;
+    margin-left: 20px;  
+}

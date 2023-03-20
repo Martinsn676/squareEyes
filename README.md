@@ -1,2 +1,0 @@
-# squareEyes
-squareEyes project

@@ -5,51 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>squareEyes</title>
-    <link href="index.css" rel="stylesheet">
-    
+    <link href="styles.css" rel="stylesheet">
 </head>
 
+
+
 <body>
-<header>
-    <section class="topMenuButtons">
-        
-            <a href="index.html" ><img src="images/logo.png" alt="logo" class="onlyTabletPC"></a>   
-        
-        
-            <nav class="topMenuText">
-                <a href="index.html" class="active cleanCta  hoverCta">Home</a>                <a href="collection.html" class="cleanCta hoverCta">Browse</a>
-                <a href="collection.html" class="cleanCta hoverCta">Discover</a>
-                
-                <a href="index.html" class="cleanCta hoverCta">Friends</a>
+
+
+    <header>
+        <section class="headerMenu flexRow alignCenter">
+            <nav class="onlyPc">
+            <a href="index.html"><img src="icons/headerLogo.png"></a>
             </nav>
-                <nav class="topMenuIcons">
-                <a href="index.html" class="hoverCta onlyMobile"><img src="images/mBackIcon.png" alt="back, go to last page"></a>
-                <a href="index.html" class="hoverCta onlyMobile mobileLogo"><img src="images/logo.png" alt="home, go to homepage"></a>
-                <a href="cart.html" class="hoverCta"><img src="images/basketIcon.png" alt="basket, go to"></a>
-                <a href="library.html" class="hoverCta"><img src="images/libraryIcon.png" alt="library, go to"></a>
-                <a href="profile.html" class="hoverCta"><img src="images/profileIcon.png" alt="profile, go to"></a>
+            <nav class="headerText hoverCta cleanCta">
+                <a href="index.html">Home</a>
+                <a href="browse.html">Browse</a>
+                <a href="index.html">Discover</a>
+                <a href="index.html">Friends</a>
             </nav>
-        </section>   
-</header>
+
+            <nav class="headerIcons hoverCta">
+                <a href="index.html"><img src="icons/basket.png"></a>
+                <a href="index.html"><img src="icons/library.png"></a>
+                <a href="index.html"><img src="icons/profile.png"></a>
+            </nav>
+        </section>
+    </header>
 
     <main>
-       
-        <nav class="frontPageMenu">
-        <img id="design" src="images/croppedDesign.png" alt="decoration">
-        
-            <a href="collection.html" class="hoverCta darkCta ">Browse</a>
-            <a href="collection.html" class="hoverCta darkCta ">Discover</a>
-            <a href="index.html" class="hoverCta darkCta ">Friends</a>
-        
-        </nav>
-
-
-        <h3 class="hoverCta darkCta"> Test </h3>
-
+        <section class="frontPage flexRow">                 
+        <div class="frontPageText textClose">
+            <h3>Features:</h3>
+            <p>High definition Video</p>
+                <p>Full surround Sound</p>
+                <p>Share your Library</p>
+                <p>Stream together with others</p>
+        </div>
+        <div>
+        <img class="frontPageDesign" src="other/cDesign.png">
+        </div>   
+        </section>
     </main>
-
-    <footer>
-
-    </footer>
+    <footer class="footerClass">
+        <div class="line"></div>
+     <section class="flexColumn cleanCta">
+        <a href="#">Privacy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Refunds</a>
+        <a href="#">Questions and Answers</a>
+        
+    </section> 
+    <section class="flexColumn cleanCta">
+        <a href="#">Contact Us</a>
+        <a href="#">About Us</a>
+    </section>
 </body>
 </html>
