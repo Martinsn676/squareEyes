@@ -1,8 +1,10 @@
 
-/*
-a,p,h1,h2,h3,h4,h5,h6,form,label,button, input,img{border-style: dashed;border-color: red;}
-*/
 
+a,p,h1,h2,h3,h4,h5,h6,form,label,button, input,img{border-style: dashed;border-color: red;}
+
+body{
+    margin: 0 auto; 
+}
 /*========== Media Changes ===========*/
 
 /*@media (min-width:376px) and (max-width:768px){
@@ -12,7 +14,7 @@ a,p,h1,h2,h3,h4,h5,h6,form,label,button, input,img{border-style: dashed;border-c
     }
 }*/
 
-
+/*======= Tablet and up Screen =======*/
 @media (min-width:376px){
     
     header .onlyMobile{
@@ -27,6 +29,7 @@ a,p,h1,h2,h3,h4,h5,h6,form,label,button, input,img{border-style: dashed;border-c
     }
 }
 
+/* ======= Mobile screen ======= */
 @media (max-width:375px){
     header .headerMenu {
         flex-direction: column;}
@@ -68,10 +71,8 @@ a,p,h1,h2,h3,h4,h5,h6,form,label,button, input,img{border-style: dashed;border-c
     transform: scale(1.2);
     transform-origin: center;
     align-items: center;    }
-
-
-        
-.headerMenu nav{display:flex;}.hoverCta a:hover{
+       
+nav{display:flex;/*bug fix*/}.hoverCta a:hover{
     
     transform: scale(1.1);
     transform-origin: center;
@@ -82,8 +83,7 @@ a,p,h1,h2,h3,h4,h5,h6,form,label,button, input,img{border-style: dashed;border-c
 .flexColumn{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-       }
+    justify-content: center;    }
     
 .flexRow{
     display: flex;
@@ -107,9 +107,7 @@ a,p,h1,h2,h3,h4,h5,h6,form,label,button, input,img{border-style: dashed;border-c
 }
 
 /*============ Products Page ============*/
-body{
-    margin: 0 auto; 
-}
+
 .productsView {
     display: flex;
     flex-wrap: wrap;
