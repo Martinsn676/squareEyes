@@ -46,16 +46,17 @@
 
  
 
-    <main>
+    <main class="cartPage">
         <p>Will be scrollable</p>
-    <section class="cartVisualContent flexRow">
+    <section class="cartVisualContent grid1">
         
         <img src="products\Frozen 2.png">
         <img src="products\Moana.png">
         <img src="products\Tangled.png">
+        
     </section>
 
-    <section class="cartContent">
+    <section class="cartContent grid2">
 
         <div class="grid1">
             <div>Products in basket</div>
@@ -108,21 +109,19 @@
     </section>
     
 
-    <section class="cartPaymentOptions flexColumn">
-        <div>
-          
+    <section class="cartPaymentOptions flexRow grid3">
+        <div class="flexRow">
             <input type="radio" id="cardPayment" name="paymentOption" checked>
-              <label for="paymentOption"><img src="Other/card.png"></label>
+            <label for="cardPayment"><img src="Other/card.png"></label>
           </div>
-
-          <div>
+          <div class="flexRow">
             <input type="radio" id="paypalPayment" name="paymentOption">
-            <label for="paymentOption"><img src="Other/paypal.png"></label>
+            <label for="paypalPayment"><img src="Other/paypal.png"></label>
           </div>
 
-          <div>
+          <div class="flexRow">
             <input type="radio" id="vippsPayment" name="paymentOption">
-            <label for="paymentOption"><img src="Other/vipps.png"></label>
+            <label for="vippsPayment"><img src="Other/vipps.png"></label>
           </div>
     </section>
 

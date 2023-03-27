@@ -2,15 +2,15 @@
 /*
 a,p,h1,h2,h3,h4,h5,h6,form,label,button, input,img{border-style: dashed;border-color: red;}
 */
-
-
 body{
-    max-width: 800px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     font-family: Arial, Helvetica, sans-serif; }
 
-
+a{
+    text-decoration: none;
+}
 
 /*========== Media Changes ===========*/
 
@@ -20,59 +20,42 @@ body{
 
 /*======= Tablet and up Screen =======*/
 @media (min-width:540px){
-    
-    body .showMobile{
-        display:none;
-    }
-    
-    .headerIcons a, .headerIcons img{ 
+    header .headerIcons img, .headerIcons a{ 
         height: 50px;
-        margin-left: 2%;
-    }
+        margin-left: 2%;    }
 
-    .headerText a{
-        margin:2%;
-    }
+    header .headerText a{
+        margin:2%;  }
 
     footer{
-      
         width:300px;
         border-top: 1px solid black;
-        margin-left: 20px;
-        margin-top: 100px;
+        margin:100px 0 0 20px;
         padding-top: 10px;  }
 
+    body .showMobile{
+        display:none;   }
 }
+
 @media (min-width:540px) and (max-width:640px){
     header .headerIcons{
         margin-left: 0; }
 }
+
 /* ======= Mobile screen ======= */
 @media (max-width:539px){
     header .headerMenu {
         flex-direction: column;}
 
-    
-
     header .headerIcons a, header .headerIcons img{ 
         height:70px;  }
 
     header .headerIcons{
-        margin-left: 0;
-        
-    }
+        margin-left: 0; }
     
-
-    .headerIcons a, .headerIcons img, .headerText a{ 
+    header .headerIcons a, .headerIcons img, .headerText a{ 
         height: 50px;
-        margin: 0 5px 0px 5px;
-       
-    }
-    /*
-    header .headerText{
-        height: 30px;
-        border-bottom: none;
-        margin-left: 2%;}*/
+        margin: 0 5px 0px 5px;  }
 
     main .frontPage .frontPageText{
         display:none;   }
@@ -80,15 +63,13 @@ body{
     main .aboutUsPage section{
         flex-direction: column; }
 
-    main .productDisplay6 {
-        grid-template-columns: auto auto;   }
-
     main .singeProductPage{
         flex-wrap: wrap;    }
 
     main .singleProductText{
         margin: 0 0 20px 5px;   }
 
+    
     footer .footerClass .flexColumn{
         flex-direction: row;    }
 
@@ -105,9 +86,9 @@ body{
         padding-top:15px; }
     
     footer {
-        margin-top:100px;   }
+        margin:50px 0;   }
 
-    .hideMobile{
+    body .hideMobile{
         display:none;   }  
 }
 
@@ -118,7 +99,6 @@ body{
     padding:10px;
     border-radius: 20px;
     color:white;
-    text-decoration: none;
     margin: 10px;  
     width: 10rem;
     text-align: center; }
@@ -128,18 +108,15 @@ body{
     padding:10px;
     border-radius: 20px;
     color:rgb(61, 61, 61);
-    text-decoration: none;
     margin: 10px;  
     width: 10rem;
     text-align: center; }
 
 .cleanCta{
-    color:black;
-    text-decoration:none;   }
+    color:black;  }
 
 .active{
-    transform: scale(1.2);
-    transform-origin: center center;  }
+    text-decoration:underline  }
     
 nav{display:flex;/*bug fix*/}.hoverCta:hover{
     
@@ -173,36 +150,32 @@ nav{display:flex;/*bug fix*/}.hoverCta:hover{
 .textRight{
     text-align: right;  }
 
-/*============ Home Page ============*/
-
-.frontPage img{
-    height: 100%;
-    width: 100%;
-    size: cover;
-    max-width: 500px;
-    margin: 0 auto 40px auto; }
-
-
-/*============ Products Page ============*/
-
-.productDisplay6 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(177px, 1fr));
-    /*grid-template-columns:repeat(6, 1fr);*/
-    gap:10px;
-    margin: 0 20px; }
+/*========= Animations =========*/
 
 .opacityEntry{
     animation: opacity 2s forwards;
-    opacity: 0;
-}
-
+    opacity: 0; }
+    
 @keyframes opacity {
     30%{opacity: 0;}
-    100%{opacity: 1;}
+    100%{opacity: 1;}   }
+
+/*============ Products Page ============*/
+
+.productTextHide h3{
+    display: none;
 }
-.productDisplay6 a:hover{
-    
+.productDisplay6{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;}
+
+.productDisplay6 div{
+    margin: 0.7%;   }
+
+.productDisplay6 div:hover{
     transform: scale(1.1);
     transform-origin: center;
     transition: transform 0.2s ease-in-out; }
@@ -217,14 +190,16 @@ nav{display:flex;/*bug fix*/}.hoverCta:hover{
     width:167px;
     border-radius: 0 0 5px 5px;
     position: relative; }
-/*
-.productDisplay6 a{
-    text-decoration:none; 
-    transition: goUp 2s forwards;   }
-*/
+
 .productDisplay6 img{
     width:167px;
     border-radius: 5px; }
+
+.frontPage .productDisplay6{
+    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 
 /*============ Single Products Page ============*/
 
@@ -240,7 +215,7 @@ nav{display:flex;/*bug fix*/}.hoverCta:hover{
     margin: 5px 0 5px 0;    }
 
 .singeProductPage h4{
-    padding-left: 15px; }
+    padding-left: 15px;     }
 
 /*========= Header =========*/
 
@@ -260,12 +235,12 @@ header {
 .headerLogo img{
     max-height: 60px;   }
 
-header .searchInput {
+.searchInput {
     position: absolute;
     z-index: 1;
     padding: 5px 15px 5px 15px;  }
       
-header .searchBackground {
+.searchBackground {
     position: relative;
     z-index: 0;
     background-color:transparent;
@@ -287,8 +262,7 @@ header .backButton, header .editFilterButton{
     border-radius: 5px 5px 5px 5px;
     color:white;
     }header .backButton{
-        border-radius: 50px 10px 10px 50px;
-    }
+        border-radius: 50px 10px 10px 50px; }
 
 header .headerNavMenu{
     margin-top: 30px;   }
@@ -296,8 +270,7 @@ header .headerNavMenu{
 #arrowLeft{
     height: 15px;
     position: relative;
-    bottom:-2px;
-}
+    bottom:-2px;    }
 
 /*======= Contact Us page =======*/
 
@@ -309,46 +282,44 @@ header .headerNavMenu{
     margin: 0 auto;
     text-align: center; }
 
-    body{
-        max-width: 1000px;
-    }
-
 /* ===== Cart Page ====== */
+
+.cartPage{
+    display: grid;
+    grid-template-areas: 
+    'grid1 grid2'
+    'grid1 grid3'}
 
 .cartVisualContent{
     margin-left: 15px;
-    overflow: hidden;
-}
+    overflow: hidden;   }
+
 .cartContent {
-    margin:0 15%;
+    margin:0 15px;
+    min-width: 306px;
     display: grid;
     grid-template-areas: 
     'grid1 grid5'
     'grid2 grid6'
     'grid3 grid7'
     'grid4 grid8'
-    'grid9 grid9';
-    grid-template-rows: repeat(4, auto);
-    grid-template-columns: repeat(2, 1fr);  }
+    'grid9 grid9'; }
 
 .cartContent div{
-    margin: 4px 0;
-}
+    margin: 4px 0;  }
 
+.cartPaymentOptions{
+    max-height: 4rem;
+    margin-top: 40px;
+}
 .cartPaymentOptions div{
-  
-    align-items: center;
-    
+    margin-left: 30px;
 }
+    /*============ Home Page ============*/
 
-.cartPaymentOptions input{
-    width:300px;
-    height:20px;
-    position: absolute;
-    z-index: 1;
-}
-.cartPaymentOptions label{
-    margin-left: 50px;
-    position: relative;
-    z-index: 0;
-}
+.frontPageDesign{
+    height: 100%;
+    width: 100%;
+    size: cover;
+    max-width: 750px;
+    margin: 0 auto 40px auto; }
