@@ -12,14 +12,20 @@ a{
     text-decoration: none;
 }
 
-/*========== Media Changes ===========*/
+.textLines h4, .textLines a{
+    padding-left: 15px;
+    color:#706F6F;     }
 
-.imgAndButtons{
-    margin-left: 15px;
-}
+/*========== Media Changes ===========*/
 
 /*======= Tablet and up Screen =======*/
 @media (min-width:540px){
+    nav{display:flex;/*bug fix*/}.hoverCta:hover{
+    
+        transform: scale(1.05);
+        transform-origin: center center;
+        transition: transform 0.2s ease-in-out; }
+
     header .headerIcons img, .headerIcons a{ 
         height: 50px;
         margin-left: 2%;    }
@@ -68,7 +74,11 @@ a{
 
     main .singleProductText{
         margin: 0 0 20px 5px;   }
-
+    
+    main .contactUsPage{
+        display: flex;
+        flex-direction: column;
+    }
     
     footer .footerClass .flexColumn{
         flex-direction: row;    }
@@ -118,11 +128,7 @@ a{
 .active{
     text-decoration:underline  }
     
-nav{display:flex;/*bug fix*/}.hoverCta:hover{
-    
-    transform: scale(1.1);
-    transform-origin: center center;
-    transition: transform 0.2s ease-in-out; }
+
     
 /*========= Standard statuses =========*/
 
@@ -140,6 +146,7 @@ nav{display:flex;/*bug fix*/}.hoverCta:hover{
 
 .alignCenter{
     align-items: center;
+    margin: 0 auto;
     justify-content: center;   }
 
 .alignTop{
@@ -169,7 +176,6 @@ nav{display:flex;/*bug fix*/}.hoverCta:hover{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 auto;
     justify-content: center;}
 
 .productDisplay6 div{
@@ -195,12 +201,6 @@ nav{display:flex;/*bug fix*/}.hoverCta:hover{
     width:167px;
     border-radius: 5px; }
 
-.frontPage .productDisplay6{
-    overflow: hidden;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
 /*============ Single Products Page ============*/
 
 .singleProductText{
@@ -214,9 +214,10 @@ nav{display:flex;/*bug fix*/}.hoverCta:hover{
 .imgAndButtons a{
     margin: 5px 0 5px 0;    }
 
-.singeProductPage h4{
-    padding-left: 15px;     }
 
+.imgAndButtons{
+    margin-left: 15px;  }
+    
 /*========= Header =========*/
 
 .headerText{
@@ -277,10 +278,21 @@ header .headerNavMenu{
 .aboutUsMap img{
     max-width: 400px;   }
 
-.aboutUsTopText{
+.aboutUsTopText, .contactUsTopText{
     max-width: 300px;
-    margin: 0 auto;
     text-align: center; }
+
+.contactUsPage label{
+    margin-top: 5px;
+}
+
+.contactUsPage{
+    max-width: 500px;
+    display: grid;
+    grid-template-areas:
+    'grid1 grid1'
+    'grid2 grid3'
+    'grid2 grid4';  }
 
 /* ===== Cart Page ====== */
 
@@ -310,11 +322,11 @@ header .headerNavMenu{
 
 .cartPaymentOptions{
     max-height: 4rem;
-    margin-top: 40px;
-}
+    margin-top: 40px;   }
+
 .cartPaymentOptions div{
-    margin-left: 30px;
-}
+    margin-left: 30px;}
+
     /*============ Home Page ============*/
 
 .frontPageDesign{
@@ -323,3 +335,9 @@ header .headerNavMenu{
     size: cover;
     max-width: 750px;
     margin: 0 auto 40px auto; }
+
+.frontPage .productDisplay6{
+    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;    }
