@@ -288,6 +288,7 @@ header .headerNavMenu{
 
 .contactUsPage{
     max-width: 500px;
+    margin: 0 auto;
     display: grid;
     grid-template-areas:
     'grid1 grid1'
