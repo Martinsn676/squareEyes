@@ -1,0 +1,51 @@
+.grid1::before{
+    content: "1";
+    position: absolute;
+    font-size: 30px;
+    color:red;
+    background-color: #000;
+    padding: 2px 4px;
+    
+}
+.grid2::before{
+    content: "2";
+    position: absolute;
+    font-size: 30px;
+    color:red;
+    background-color: #000;
+    padding: 2px 4px;
+}
+.grid3::before{
+    content: "3";
+    position: absolute;
+    font-size: 30px;
+    color:red;
+    background-color: #000;
+    padding: 2px 4px;
+}
+.grid4::before{
+    content: "4";
+    position: absolute;
+    font-size: 30px;
+    color:red;
+    background-color: #000;
+    padding: 2px 4px;
+}
+.grid5::before{
+    content: "5";
+    position: absolute;
+    font-size: 30px;
+    color:red;
+    background-color: #000;
+    padding: 2px 4px;
+}
+.grid6::before{
+    content: "6";
+    position: absolute;
+    font-size: 30px;
+    color:red;
+    background-color: #000;
+    padding: 2px 4px;
+}
+
+a,p,h1,h2,h3,h4,h5,h6,div,img,form,label,button, input,img{background-color:gainsboro}

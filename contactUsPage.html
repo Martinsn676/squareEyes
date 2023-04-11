@@ -4,95 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SquareEyes - Contact us</title>
-    <link href="styles.css" rel="stylesheet">
+    <title>SquareEyes - Contact page</title>
+    <meta desciption="Contact page for Square Eyes, send us a message or give us a call">
+    <link href="cssFolder/styles.css" rel="stylesheet">
+    <link href="cssFolder/editMode.css" rel="stylesheet">
+    <link href="cssFolder/infoPages.css" rel="stylesheet">
+  
 </head>
-
-
-
 <body>
-
-
     <header>
-        <section class="headerMenu flexRow alignCenter">
-            <nav>
-            <a href="index.html" class="headerLogo"><img src="other/logo.png"></a>
-            
+        <section class="topHeader flexRow">
+            <section class="flexRow">
+                <a href="index.html"><img src="other/logo.png" id="headerLogo" class="hideMobile"></a>
+            </section>
+            <nav class="headerLinks flexRow alignRow hideMobile cleanCtaGroup">
+                <a href="index.html">Home</a>
+                <a href="browsingPage.html">Browse</a>
+                <a href="browsingPage.html">Discover</a>
+                <a href="#">Friends</a>
             </nav>
-            <nav class="hideMobile headerText">
-                <a href="index.html" class="cleanCta hoverCta">Home</a>
-                <a href="productsPage.html" class="cleanCta hoverCta">Browse</a>
-                <a href="index.html" class="cleanCta hoverCta">Discover</a>
-                <a href="index.html" class="cleanCta hoverCta">Friends</a>
-            </nav>
-
-            <nav class="headerIcons">
-                <a href="index.html" class="iconCta hoverCta"><img src="icons/basket.png"></a>
-                <a href="index.html" class="iconCta hoverCta"><img src="icons/library.png"></a>
-                <a href="index.html" class="iconCta hoverCta"><img src="icons/profile.png"></a>
+            <nav class="headerIcons flexRow alignBotttom cleanCtaGroup">     
+                <a href="index.html" class="showMobile"><img src="icons/homeIcon.png" alt="Home icon">Home</a>
+                <a href="basketPage.html" class="hoverCta"><img src="icons/basketIcon.png" alt="Basket icon">Basket</a>
+                <a href="index.html" class=""><img src="icons/libraryIcon.png" alt="Library icon">Library</a>
+                <a href="index.html" class=""><img src="icons/profileIcon.png" alt="Profile icon">Profile</a>
             </nav>
         </section>
-        <nav class="headerNavMenu">
-            <a href="#" class="cleanCta backButton hideMobile"><img src="Other/arrowLeft.png" id="arrowLeft">Back</a>
-        </nav>
-        
+        <section>
+            <nav class="flexRow alignRow">
+                <a href="#" class="cleanCta backButton"><img src="Other/arrowLeft.png" id="arrowLeft">Back</a>
+                <a href="#" class="cleanCta editFilterButton">Edit Filter</a>
+                <div>
+                    <input type="search" id="site-search" name="q" class="searchInput">
+                    <button class="searchBackground"><img src="Other/searchIcon.png" id="searchIcon"></button>            
+                </div>
+            </nav>
+        </section>
+    </section>
     </header>
 
-    <main><section class="contactUsPage">
+    <main><section class="contactUsPage flexColumn alignColumn">
 
-        <section class="contactUsTopText grid1 alignCenter">
-            <h2>Contact us</h2>
+        <section class="infoTopText grid1 alignCenter">
+            <h1>Contact us</h1>
             <p>We are here to support you all weekdays from 9:00 - 15:00</p>
         </section>
-        <section class="flexColumn grid2"
-        style="width:200px;">
+
+        <section class="flexColumn grid2 contactFields">
             <p>The best way to reach us, is through this contact form</p>
             <label for="nameField">Name:</label>
-            <input type="text" id="nameField" name="message"
-            style="width:200px;">
+            <input type="text" id="nameField" name="message">
             <label for="emailField">E-mail:</label>
-            <input type="text" id="emailField" name="message"
-            style="width:200px;">
+            <input type="text" id="emailField" name="message">
             <label for="message">What can we help you with?</label>
-            <textarea type="text" id="message" name="message"
-            style="height:100px; max-width:200px;"></textarea>
-            <button 
-            style="width:50px;">Send</button>
+            <textarea type="text" id="message" name="message"></textarea>
+            <div class="sendButton">
+                <button>Send</button>
+                <p>Message sent!</p>
+            </div>
         </section>
-        <section class="grid3 noMarginGroup textLines"
-        style="margin-top: 20px;">
-            <h6> Contact e-mail </h6>
-            <a href="mailto:contact@squareeyes.com"> contact@SquareEyes.com</a>
-            <h6> Phone number </h6>
-            <h4> +47 22442200</h4>
-            <h6> Postal address </h6>
-            <h4> Tvetensveien 150</h4>
-            <h4> 0671 Oslo</h4>
+
+        <section class="grid3 noMarginGroup textLines">
+            <h6> Contact e-mail </h6><a href="mailto:contact@squareeyes.com"> contact@SquareEyes.com</a>
+            <h6> Phone number </h6><h4> +47 22442200</h4>
+            <h6> Postal address </h6><h4> Tvetensveien 150</h4><h4> 0671 Oslo</h4>
         </section>
-        <section class="grid4">
-            <img  src="other/mapPc.png" style="width: 250px; margin-left:0;" >
+
+        <section class="grid4 mapSnippet">
+            <img  src="other/mapPc.png">
         </section></section>
     </main>
-
-
-
-    <footer>
-        <section class="footerClass flexRow alignTop">
-            
-         <nav class="flexColumn firstSection">
-            <a href="#" class="cleanCta hoverCta">Privacy</a>
-            <a href="#" class="cleanCta hoverCta">Terms of Service</a>
-            <a href="#" class="cleanCta hoverCta">Refunds</a>
-            <a href="#" class="cleanCta hoverCta hideMobile">Questions and Answers</a>
-            
-         </nav>
-        <nav class="flexColumn">
-            <a href="contactUsPage.html" class="cleanCta hoverCta">Contact us</a>
-            <a href="aboutUsPage.html" class="cleanCta hoverCta">About us</a>
+<footer>
+    <section class="footerClass">
+        <nav class="cleanCtaGroup">
+        <a href="#" class="hoverCta">Privacy</a>
+        <a href="#" class="hoverCta">Terms of Service</a>
+        <a href="#" class="hoverCta">Refunds</a>
+        <a href="#" class="hoverCta hideMobile">Questions and Answers</a>
+        
         </nav>
-        </section>
-        </footer>
-
-
+    <nav class="cleanCtaGroup">
+        <a href="contactUsPage.html" class="hoverCta">Contact us</a>
+        <a href="aboutUsPage.html" class="hoverCta">About us</a>
+    </nav>
+    </section>
+</footer>
 </body>
 </html>

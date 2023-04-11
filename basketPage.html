@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SquareEyes - Basket page</title>
+    <meta desciption="Basket page for Square Eyes, see what you have in your">
+    <link href="cssFolder/styles.css" rel="stylesheet">
+    <link href="cssFolder/product&checkout.css" rel="stylesheet">
+    <link href="cssFolder/editMode.css" rel="stylesheet">
+  
+</head>
+
+
+
+<body>
+    <header>
+        <section class="topHeader flexRow">
+            <section class="flexRow">
+                <a href="index.html"><img src="other/logo.png" id="headerLogo" class="hideMobile"></a>
+            </section>
+            <nav class="headerLinks flexRow alignRow hideMobile cleanCtaGroup">
+                <a href="index.html">Home</a>
+                <a href="browsingPage.html">Browse</a>
+                <a href="browsingPage.html">Discover</a>
+                <a href="#">Friends</a>
+            </nav>
+            <nav class="headerIcons flexRow alignBotttom cleanCtaGroup">     
+                <a href="index.html" class="showMobile"><img src="icons/homeIcon.png" alt="Home icon">Home</a>
+                <a href="basketPage.html" class="hoverCta"><img src="icons/basketIcon.png" alt="Basket icon">Basket</a>
+                <a href="index.html" class=""><img src="icons/libraryIcon.png" alt="Library icon">Library</a>
+                <a href="index.html" class=""><img src="icons/profileIcon.png" alt="Profile icon">Profile</a>
+            </nav>
+        </section>
+        <section>
+            <nav class="flexRow alignRow">
+                <a href="#" class="cleanCta backButton"><img src="Other/arrowLeft.png" id="arrowLeft">Back</a>
+                <a href="#" class="cleanCta editFilterButton">Edit Filter</a>
+                <div>
+                    <input type="search" id="site-search" name="q" class="searchInput">
+                    <button class="searchBackground"><img src="Other/searchIcon.png" id="searchIcon"></button>            
+                </div>
+            </nav>
+        </section>
+    </section>
+    </header>
+
+    <main><section  class="cartPage">
+    <h1>Complete your order by paying for the items in your basket</h1>
+    <section class="cartVisualContent grid1 flexRow">
+        
+        <img src="products\Frozen 2.png">
+        <img src="products\Moana.png">
+        <img src="products\Tangled.png">
+        
+    </section>
+
+    <section class="cartContent grid2">
+
+        <div class="grid1">
+            <div>Products in basket</div>
+        </div>
+
+        <div class="grid2">
+            <div>1x Frost 2, Disney</div>
+            <div>1x Moana, Disney</div>
+            <div>1x Tangled, Disney</div>
+        </div>
+
+        <div class="grid3">
+            <div> Total</div>
+            <div> Dicount, 10%</div>
+            <div> Mva 25%</div>
+        </div>
+
+        <div class="grid4">
+            <div>Total cost to pay</div>
+        </div> 
+
+        <div class="grid5 textRight">
+            <div>Price</div>
+        </div>
+
+        <div class="grid6 textRight">
+            <div>99,00 kr</div>
+            <div>79,00 kr</div>
+            <div>89,00 kr</div>
+        </div>
+
+        <div class="grid7 textRight">
+            <div>267,00 kr</div>
+            <div>-26,70 kr</div>
+            <div>53,40 kr</div>
+        </div>
+
+        <div class="grid8 textRight">
+            <div>240,30 kr</div>
+        </div> 
+
+        <div class="grid9">
+            <input type="checkbox" id="Subscribe to newsletter" name="newsletter?" checked>
+            <label for="newsletter?">Subscribe to newsletter</label>
+          </div>
+
+    </section>
+    
+<section class="flexColumn alignColumn">
+    <section class="cartPaymentOptions flexRow grid3">
+        <div class="flexRow">
+            <input type="radio" id="cardPayment" name="paymentOption" checked>
+            <label for="cardPayment"><img src="Other/card.png"></label>
+          </div>
+          <div class="flexRow">
+            <input type="radio" id="paypalPayment" name="paymentOption">
+            <label for="paypalPayment"><img src="Other/paypal.png"></label>
+          </div>
+
+          <div class="flexRow">
+            <input type="radio" id="vippsPayment" name="paymentOption">
+            <label for="vippsPayment"><img src="Other/vipps.png"></label>
+          </div>     
+    </section>
+    <section class="paymentDetails">
+        <div class="flexColumn"><label for="nameField">Name on the card</label>
+        <input type="text" id="nameField" name="message"></div>
+        <div class="flexColumn"><label for="cardNumberField">Card number</label>
+        <input type="text" id="emailField" name="message"></div>
+        <section class="flexRow">
+            <div class="flexColumn nameField"><label for="nameField">Date/year</label>
+            <input type="text" id="nameField" name="message"></div>
+            <div class="flexColumn cvcField"><label for="CvcField">Cvc</label>
+            <input type="text" id="cvcField" name="message"></div>
+        </section>
+         
+    </section>
+    <button>Place order</button>   
+</section>
+</main>
+
+<footer>
+    <section class="footerClass">
+        <nav class="cleanCtaGroup">
+        <a href="#" class="hoverCta">Privacy</a>
+        <a href="#" class="hoverCta">Terms of Service</a>
+        <a href="#" class="hoverCta">Refunds</a>
+        <a href="#" class="hoverCta hideMobile">Questions and Answers</a>
+        
+        </nav>
+    <nav class="cleanCtaGroup">
+        <a href="infoPages/contactUsPage.html" class="hoverCta">Contact us</a>
+        <a href="infoPages/aboutUsPage.html" class="hoverCta">About us</a>
+    </nav>
+    </section>
+</footer>
+</body>
+</html>

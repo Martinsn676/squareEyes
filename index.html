@@ -5,105 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SquareEyes</title>
-    <link href="styles.css" rel="stylesheet">
+    <meta desciption="Front page for Square Eyes, buy movies directly from publisher">
+    <link href="cssFolder/styles.css" rel="stylesheet">
+    <link href="cssFolder/editMode.css" rel="stylesheet">
+  
 </head>
-
-
-
 <body>
-
-
-    <header class="flexColumn">
-        <section class="headerMenu flexRow alignCenter">
-            <nav>
-            <a href="index.html" class="headerLogo"><img src="other/logo.png"></a>
-            
-            </nav>
-            <nav class="hideMobile headerText">
-                <a href="index.html" class="cleanCta hoverCta active">Home</a>
-                <a href="productsPage.html" class="cleanCta hoverCta">Browse</a>
-                <a href="index.html" class="cleanCta hoverCta">Discover</a>
-                <a href="index.html" class="cleanCta hoverCta">Friends</a>
-            </nav>
-
-            <nav class="headerIcons">
-                <a href="index.html" class="iconCta hoverCta"><img src="icons/basket.png" alt="basketIcon"></a>
-                <a href="index.html" class="iconCta hoverCta"><img src="icons/library.png" alt="libraryIcon"></a>
-                <a href="index.html" class="iconCta hoverCta"><img src="icons/profile.png" alt="profileIcon"></a>
-            </nav>
+<header>
+    <section class="topHeader flexRow">
+        <section class="flexRow">
+            <a href="index.html"><img src="other/logo.png" id="headerLogo" class="hideMobile"></a>
         </section>
-        <section>
-        <nav class="headerNavMenu">
-            <a href="#" class="cleanCta backButton hideMobile"><img src="Other/arrowLeft.png" id="arrowLeft">Back</a>
-            
-            <a href="#" class="hideMobile cleanCta editFilterButton">Edit Filter</a>
-            <a href="mobileSearchPage.html" class="showMobile cleanCta editFilterButton">Filter</a>
-            <section> 
-                <input type="search" id="site-search" name="q" class="searchInput">
-                <button class="searchBackground"><img src="Other/searchIcon.png" id="searchIcon"></button>
-            </section>
+        <nav class="headerLinks flexRow alignRow hideMobile cleanCtaGroup">
+            <a href="index.html">Home</a>
+            <a href="browsingPage.html">Browse</a>
+            <a href="browsingPage.html">Discover</a>
+            <a href="#">Friends</a>
         </nav>
-        </section>
-    </header>
-
-    <main class="frontPage">
-
-        
-        <section class="frontPage flexRow alignCenter">                 
-            <div class="frontPageText noMarginGroup">
-                <h3>Features:</h3>
-                <p>High definition Video</p>
-                <p>Full surround Sound</p>
-                <p>Share your Library</p>
-                <p>Stream together with others</p>
-            </div>
-            <div>
-                <img class="frontPageDesign" src="other/cDesign.png" alt="illustration with advertisemnt">
-            </div>
+        <nav class="headerIcons flexRow alignBotttom cleanCtaGroup">     
+            <a href="index.html" class="showMobile"><img src="icons/homeIcon.png" alt="Home icon">Home</a>
+            <a href="basketPage.html" class="hoverCta"><img src="icons/basketIcon.png" alt="Basket icon">Basket</a>
+            <a href="index.html" class=""><img src="icons/libraryIcon.png" alt="Library icon">Library</a>
+            <a href="index.html" class=""><img src="icons/profileIcon.png" alt="Profile icon">Profile</a>
+        </nav>
     </section>
-
-        <nav class="frontPageLinks flexColumn alignCenter showMobile">
-            <a href="productsPage.html" class="darkCta">Browse</a>
+    <section>
+        <nav class="flexRow alignRow">
+            <a href="#" class="cleanCta backButton"><img src="Other/arrowLeft.png" id="arrowLeft">Back</a>
+            <a href="#" class="cleanCta editFilterButton">Edit Filter</a>
+            <div>
+                <input type="search" id="site-search" name="q" class="searchInput">
+                <button class="searchBackground"><img src="Other/searchIcon.png" id="searchIcon"></button>            
+            </div>
+        </nav>
+    </section>
+</section>
+</header>
+<main>
+    <section class="frontPage">  
+        <nav class="frontPageLinks flexColumn alignColumn showMobile">
+            <a href="browsingPage.html" class="darkCta">Browse</a>
             <a href="index.html" class="darkCta">Discover</a>
             <a href="index.html" class="darkCta">Friends</a>
-        </nav>
-        <h2 class="hideMobile">Featured Movies:</h2>
-    <section class="hideMobile productDisplay6 opacityEntry productTextHide">
+        </nav>      
+        <div class="frontPageInfo">
+            <h1>Features we offer</h1>
+            <div class="frontPageInfoContent">
+                <h3>High definition Video</h3>
+                <h3>Full surround Sound</h3>
+                <h3>Share your Library</h3>
+                <h3>Stream together with friends</h3>
+            </div>
+        </div>
+        <div>
+            <img class="frontPageDesign" src="other/cDesign.png" alt="illustration with advertisemnt">
+        </div>
         
+    </section>
+        <h2 class="hideMobile">Featured Movies:</h2>
+    <section class="hideMobile flexRow hoverButton productDisplay opacityEntry productTextHide">  
         <div><a href="singleProductPage.html"><img src="products/Brave.png" alt="Young woman with curly hear and an armed bow, Brave cover"><h3>Brave</h3></a></div> 
         <div><a href="singleProductPage.html"><img src="products/Frozen 2.png" alt="The main characters with Elsa in the front, Frozen 2 cover"><h3>Frozen 2</h3></a></div>
         <div><a href="singleProductPage.html"><img src="products/Moana.png" alt="Moana and the demi god and her pets, while the living sea is posing around, Moana cover"><h3>Moana</h3></a></div>
         <div><a href="singleProductPage.html"><img src="products/Onward.png" alt="Two brothers in a fantasyworld inclduing elves and other creatures set in the newer time, Onwards cover"><h3>Onward</h3></a></div>
-        <div><a href="singleProductPage.html"><img src="products/Tangled.png" alt="The main characters in battle pose, the princess with her hair, the with a frying pan and the horse with a rusty sword, Tangled cover"> <h3>Tangled</h3></a></div>
         <div><a href="singleProductPage.html"><img src="products/The little Mermaid.png" alt="A red haired mermaid swimming towards the light, The little Mermaid cover"><h3>The little Mermaid</h3></a></div>
-
-            </section>
-
-
-
-
+</section>
     </main>
-
-
-
-    <footer>
-    <section class="footerClass flexRow alignTop">
-        
-     <nav class="flexColumn firstSection">
-        <a href="#" class="cleanCta hoverCta">Privacy</a>
-        <a href="#" class="cleanCta hoverCta">Terms of Service</a>
-        <a href="#" class="cleanCta hoverCta">Refunds</a>
-        <a href="#" class="cleanCta hoverCta hideMobile">Questions and Answers</a>
+<footer>
+    <section class="footerClass">
+     <nav class="cleanCtaGroup">
+        <a href="#" class="hoverCta">Privacy</a>
+        <a href="#" class="hoverCta">Terms of Service</a>
+        <a href="#" class="hoverCta">Refunds</a>
+        <a href="#" class="hoverCta hideMobile">Questions and Answers</a>
         
      </nav>
-    <nav class="flexColumn">
-        <a href="contactUsPage.html" class="cleanCta hoverCta">Contact us</a>
-        <a href="aboutUsPage.html" class="cleanCta hoverCta">About us</a>
+    <nav class="cleanCtaGroup">
+        <a href="contactUsPage.html" class="hoverCta">Contact us</a>
+        <a href="aboutUsPage.html" class="hoverCta">About us</a>
     </nav>
     </section>
-    </footer>
-
-
-
+</footer>
 </body>
 </html>

@@ -4,85 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SquareEyes - About us</title>
-    <link href="styles.css" rel="stylesheet">
+    <title>SquareEyes - About page</title>
+    <meta desciption="About us page for Square Eyes, get to know us">
+    <link href="cssFolder/styles.css" rel="stylesheet">
+    <link href="cssFolder/editMode.css" rel="stylesheet">
+    <link href="cssFolder/infoPages.css" rel="stylesheet">
+  
 </head>
-
-
-
 <body>
-
-
     <header>
-        <section class="headerMenu flexRow alignCenter">
-            <nav>
-            <a href="index.html" class="headerLogo"><img src="other/logo.png"></a>
-            
+        <section class="topHeader flexRow">
+            <section class="flexRow">
+                <a href="index.html"><img src="other/logo.png" id="headerLogo" class="hideMobile"></a>
+            </section>
+            <nav class="headerLinks flexRow alignRow hideMobile cleanCtaGroup">
+                <a href="index.html">Home</a>
+                <a href="browsingPage.html">Browse</a>
+                <a href="browsingPage.html">Discover</a>
+                <a href="#">Friends</a>
             </nav>
-            <nav class="hideMobile headerText">
-                <a href="index.html" class="cleanCta hoverCta">Home</a>
-                <a href="productsPage.html" class="cleanCta hoverCta">Browse</a>
-                <a href="index.html" class="cleanCta hoverCta">Discover</a>
-                <a href="index.html" class="cleanCta hoverCta">Friends</a>
-            </nav>
-
-            <nav class="headerIcons">
-                <a href="index.html" class="iconCta hoverCta"><img src="icons/basket.png"></a>
-                <a href="index.html" class="iconCta hoverCta"><img src="icons/library.png"></a>
-                <a href="index.html" class="iconCta hoverCta"><img src="icons/profile.png"></a>
+            <nav class="headerIcons flexRow alignBotttom cleanCtaGroup">     
+                <a href="index.html" class="showMobile"><img src="icons/homeIcon.png" alt="Home icon">Home</a>
+                <a href="basketPage.html" class="hoverCta"><img src="icons/basketIcon.png" alt="Basket icon">Basket</a>
+                <a href="index.html" class=""><img src="icons/libraryIcon.png" alt="Library icon">Library</a>
+                <a href="index.html" class=""><img src="icons/profileIcon.png" alt="Profile icon">Profile</a>
             </nav>
         </section>
-        <nav class="headerNavMenu">
-            <a href="#" class="cleanCta backButton hideMobile"><img src="Other/arrowLeft.png" id="arrowLeft">Back</a>
-        </nav>
-        
+        <section>
+            <nav class="flexRow alignRow">
+                <a href="#" class="cleanCta backButton"><img src="Other/arrowLeft.png" id="arrowLeft">Back</a>
+                <a href="#" class="cleanCta editFilterButton">Edit Filter</a>
+                <div>
+                    <input type="search" id="site-search" name="q" class="searchInput">
+                    <button class="searchBackground"><img src="Other/searchIcon.png" id="searchIcon"></button>            
+                </div>
+            </nav>
+        </section>
+    </section>
     </header>
 
-    <main><section class="aboutUsPage flexColumn alignCenter">
-        <section class="aboutUsTopText">
-            <h2>About us</h2>
+    <main><section class="aboutUsPage flexColumn alignColumn">
+        <section class="infoTopText">
+            <h1>About us</h1>
             <p> We at Square Eyes work hard to bring you movies directly from the creator. Support your favorite company directly and enjoyour highly rated customer service!</p>
         </section>
-                
-        
             <section class="noMarginGroup textLines">
-                <h6> Legal Name </h6>
-                <h4> Smith's Movies</h4>
-                <h6> Company Number </h6>
-                <h4> 999232368</h4>
-                <h6> Mva Number </h6>
-                <h4> Mva999232368</h4>
-                <h6> Addess </h6>
-                <h4> Tveita Senter, Tveitaveien 26</h4>
-                
-            </section>
-
-           
-        
-
-
+                <h6> Legal Name </h6><h4> Smith's Movies AS</h4>
+                <h6> Company Number </h6><h4> 999232368</h4>
+                <h6> Mva Number </h6><h4> Mva999232368</h4>
+                <h6> Addess </h6><h4> Tveita Senter, Tveitaveien 26</h4>          
+            </section>          
+            <section class="grid4 mapSnippet">
+                <img  src="other/mapPc.png" >
+            </section></section>
     </main>
-
-
-
-    <footer>
-        <section class="footerClass flexRow alignTop">
-            
-         <nav class="flexColumn firstSection">
-            <a href="#" class="cleanCta hoverCta">Privacy</a>
-            <a href="#" class="cleanCta hoverCta">Terms of Service</a>
-            <a href="#" class="cleanCta hoverCta">Refunds</a>
-            <a href="#" class="cleanCta hoverCta hideMobile">Questions and Answers</a>
-            
-         </nav>
-        <nav class="flexColumn">
-            <a href="contactUsPage.html" class="cleanCta hoverCta">Contact us</a>
-            <a href="aboutUsPage.html" class="cleanCta hoverCta">About us</a>
-        </nav>
-        </section>
-        </footer>
-
-
-
+</main>
+<footer>
+    <section class="footerClass">
+     <nav class="cleanCtaGroup">
+        <a href="#" class="hoverCta">Privacy</a>
+        <a href="#" class="hoverCta">Terms of Service</a>
+        <a href="#" class="hoverCta">Refunds</a>
+        <a href="#" class="hoverCta hideMobile">Questions and Answers</a>
+        
+     </nav>
+    <nav class="cleanCtaGroup">
+        <a href="contactUsPage.html" class="hoverCta">Contact us</a>
+        <a href="aboutUsPage.html" class="hoverCta">About us</a>
+    </nav>
+    </section>
+</footer>
 </body>
 </html>

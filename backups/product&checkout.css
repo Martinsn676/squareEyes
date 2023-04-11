@@ -1,0 +1,95 @@
+/*======= Pc Screen =======*/
+@media only screen and (min-width:821px){
+    .singleProductPage{
+        max-width: 800px;
+        display: grid;
+        gap:10px;
+        grid-template-areas:
+        'grid1 grid4 grid5'
+        'grid2 grid4 grid5'
+        'grid3 . grid5'
+        'grid6 grid6 grid6';    }
+    
+    .cartPage{
+        display: grid;
+        grid-template-areas:
+        'grid1 grid2'
+        'grid1 grid3';  }
+}
+
+@media only screen and (min-width:545px) and (max-width:820px){
+    .singleProductPage{
+        display: grid;
+        gap:10px;
+        grid-template-areas:
+        'grid1 grid4 .'
+        'grid1 grid3 .'
+        'grid2 grid2 grid2'
+        'grid5 grid5 grid5'
+        'grid6 grid6 grid6';    }
+
+    .singleProductPage .grid2{
+        flex-direction: row;
+        justify-content: center;    }
+    
+    .cartPage{
+        display: grid;
+        grid-template-areas:
+        'grid1'
+        'grid2'
+        'grid3';  }
+}
+
+/* ======= Mobile screen ======= */
+@media only screen and (max-width:544px){
+
+   .singleProductPage{
+        display: grid;
+        gap:10px;
+        grid-template-areas:
+        'grid1 grid4'
+        'grid2 grid2'
+        'grid5 grid5'
+        'grid3 grid3 '
+        'grid6 grid6';
+        grid-template-columns: 1fr 1fr;    }
+
+    .singleProductPage .grid2{
+        align-items: center;    }
+    
+    .singleProductPage .productDisplay6 {
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto; }
+
+    main .cartPage{
+        display: grid;
+        grid-template-areas:
+        'grid1 grid1'
+        'grid2 grid2'
+        'grid3 grid3';  }
+
+    .singleProductPage .grid2 a{
+        font-size: 4rem;
+        width:60%;
+        min-width: 20rem;
+        margin:10px;    }  
+}
+
+
+
+/* ===== Single Product Page ====== */
+
+.singleProductPage{
+    margin:var(--headerHeight) auto;    }
+
+.singleProductPage .grid1{
+    margin-left: auto;   }
+
+.singleProductPage .grid3 img{
+    width:7.5rem;   }
+
+.singleProductDescription {
+    max-width: 85%;
+    margin:0 0 0 15px;  }
+      
