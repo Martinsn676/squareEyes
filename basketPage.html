@@ -15,138 +15,125 @@
 
 
 <body>
-    <header>
-        <section class="topHeader flexRow">
-            <section class="flexRow">
-                <a href="index.html"><img src="other/logo.png" id="headerLogo" class="hideMobile"></a>
+<header>
+    <div class="topHeader flexRow">
+        <div class="flexRow">
+            <a href="index.html"><img src="other/logo.png" id="headerLogo" class="hideMobile"  alt="Square Space logo"></a>
+        </div>
+        <nav class="headerLinks flexRow alignRow hideMobile cleanCtaGroup">
+            <a href="index.html">Home</a>
+            <a href="browsingPage.html">Browse</a>
+            <a href="browsingPage.html">Discover</a>
+            <a href="#">Friends</a>
+        </nav>
+        <nav class="headerIcons flexRow alignBotttom cleanCtaGroup">     
+            <a href="index.html" class="showMobile"><img src="icons/homeIcon.png" alt="">Home</a>
+            <a href="basketPage.html" class="hoverCta"><img src="icons/basketIcon.png" alt="">Basket</a>
+            <a href="index.html" class=""><img src="icons/libraryIcon.png" alt="">Library</a>
+            <a href="index.html" class=""><img src="icons/profileIcon.png" alt="">Profile</a>
+        </nav>
+    </div>
+    <div>
+        <nav class="bottomHeader flexRow alignRow">
+            <a href="#" class="cleanCta backButton hideMobile"><img src="Other/arrowLeft.png" id="arrowLeft" alt="">Back</a>
+            <a href="#" class="cleanCta editFilterButton">Edit Filter</a>
+            <section>
+                <input type="search" id="site-search" name="q" class="searchInput">
+                <button class="searchBackground"><img src="Other/searchIcon.png" id="searchIcon" alt=""></button>            
             </section>
-            <nav class="headerLinks flexRow alignRow hideMobile cleanCtaGroup">
-                <a href="index.html">Home</a>
-                <a href="browsingPage.html">Browse</a>
-                <a href="browsingPage.html">Discover</a>
-                <a href="#">Friends</a>
-            </nav>
-            <nav class="headerIcons flexRow alignBotttom cleanCtaGroup">     
-                <a href="index.html" class="showMobile"><img src="icons/homeIcon.png" alt="Home icon">Home</a>
-                <a href="basketPage.html" class="hoverCta"><img src="icons/basketIcon.png" alt="Basket icon">Basket</a>
-                <a href="index.html" class=""><img src="icons/libraryIcon.png" alt="Library icon">Library</a>
-                <a href="index.html" class=""><img src="icons/profileIcon.png" alt="Profile icon">Profile</a>
-            </nav>
-        </section>
-        <section>
-            <nav class="flexRow alignRow">
-                <a href="#" class="cleanCta backButton"><img src="Other/arrowLeft.png" id="arrowLeft">Back</a>
-            </nav>
-        </section>
-    </section>
-    </header>
+        </nav>
+    </div>
+</header>
 
-    <main><section  class="cartPage">
-    <h1>Complete your order by paying for the items in your basket</h1>
-    <section class="cartVisualContent grid1 flexRow">
-        
-        <img src="products\Frozen2.png">
-        <img src="products\Moana.png">
-        <img src="products\Tangled.png">
-        
+<main>
+    <section  class="cartPage">
+        <h1>Complete your order by paying for the items in your basket</h1>
+        <section class="cartVisualContent grid1 flexRow">
+            <img src="products\Frozen2.png">
+            <img src="products\Moana.png">
+            <img src="products\Tangled.png">
     </section>
-
     <section class="cartContent grid2">
-
         <div class="grid1">
             <div>Products in basket</div>
         </div>
-
         <div class="grid2">
             <div>1x Frost 2, Disney</div>
             <div>1x Moana, Disney</div>
             <div>1x Tangled, Disney</div>
         </div>
-
         <div class="grid3">
             <div> Total</div>
             <div> Dicount, 10%</div>
             <div> Mva 25%</div>
         </div>
-
         <div class="grid4">
             <div>Total cost to pay</div>
         </div> 
-
         <div class="grid5 textRight">
             <div>Price</div>
         </div>
-
         <div class="grid6 textRight">
             <div>99,00 kr</div>
             <div>79,00 kr</div>
             <div>89,00 kr</div>
         </div>
-
         <div class="grid7 textRight">
             <div>267,00 kr</div>
             <div>-26,70 kr</div>
             <div>53,40 kr</div>
         </div>
-
         <div class="grid8 textRight">
             <div>240,30 kr</div>
         </div> 
-
         <div class="grid9">
             <input type="checkbox" id="Subscribe to newsletter" name="newsletter?" checked>
             <label for="newsletter?">Subscribe to newsletter</label>
-          </div>
-
+        </div>
     </section>
-    
-<section class="flexColumn alignColumn">
-    <section class="cartPaymentOptions flexRow grid3">
-        <div class="flexRow">
-            <input type="radio" id="cardPayment" name="paymentOption" checked>
-            <label for="cardPayment"><img src="Other/card.png"></label>
-          </div>
-          <div class="flexRow">
-            <input type="radio" id="paypalPayment" name="paymentOption">
-            <label for="paypalPayment"><img src="Other/paypal.png"></label>
-          </div>
-
-          <div class="flexRow">
-            <input type="radio" id="vippsPayment" name="paymentOption">
-            <label for="vippsPayment"><img src="Other/vipps.png"></label>
-          </div>     
-    </section>
-    <section class="paymentDetails">
-        <div class="flexColumn"><label for="nameField">Name on the card</label>
-        <input type="text" id="nameField" name="message"></div>
-        <div class="flexColumn"><label for="cardNumberField">Card number</label>
-        <input type="text" id="emailField" name="message"></div>
-        <section class="flexRow">
-            <div class="flexColumn nameField"><label for="nameField">Date/year</label>
-            <input type="text" id="nameField" name="message"></div>
-            <div class="flexColumn cvcField"><label for="CvcField">Cvc</label>
-            <input type="text" id="cvcField" name="message"></div>
+    <section class="flexColumn alignColumn">
+        <section class="cartPaymentOptions flexRow grid3">
+            <div class="flexRow">
+                <input type="radio" id="cardPayment" name="paymentOption" checked>
+                <label for="cardPayment"><img src="Other/card.png"></label>
+            </div>
+            <div class="flexRow">
+                <input type="radio" id="paypalPayment" name="paymentOption">
+                <label for="paypalPayment"><img src="Other/paypal.png"></label>
+            </div>
+            <div class="flexRow">
+                <input type="radio" id="vippsPayment" name="paymentOption">
+                <label for="vippsPayment"><img src="Other/vipps.png"></label>
+            </div>     
         </section>
-         
+        <section class="paymentDetails">
+            <div class="flexColumn"><label for="nameField">Name on the card</label>
+            <input type="text" id="nameField" name="message"></div>
+            <div class="flexColumn"><label for="cardNumberField">Card number</label>
+            <input type="text" id="emailField" name="message"></div>
+            <section class="flexRow">
+                <div class="flexColumn nameField"><label for="nameField">Date/year</label>
+                <input type="text" id="nameField" name="message"></div>
+                <div class="flexColumn cvcField"><label for="CvcField">Cvc</label>
+                <input type="text" id="cvcField" name="message"></div>
+            </section>
+        </section>
+        <a href="confirmationPage.html" class="darkCta">Place order</a>   
     </section>
-    <a href="confirmationPage.html" class="darkCta">Place order</a>   
-</section>
 </main>
-
 <footer>
-    <section class="footerClass">
+    <div class="footerClass">
         <nav class="cleanCtaGroup">
-        <a href="#" class="hoverCta">Privacy</a>
-        <a href="#" class="hoverCta">Terms of Service</a>
-        <a href="#" class="hoverCta">Refunds</a>
-        <a href="#" class="hoverCta hideMobile">Questions and Answers</a>
-        
+            <a href="#" class="hoverCta">Privacy</a>
+            <a href="#" class="hoverCta">Terms of Service</a>
+            <a href="#" class="hoverCta">Refunds</a>
+            <a href="#" class="hoverCta hideMobile">Questions and Answers</a>
         </nav>
-    <nav class="cleanCtaGroup">
-        <a href="infoPages/contactUsPage.html" class="hoverCta">Contact us</a>
-        <a href="infoPages/aboutUsPage.html" class="hoverCta">About us</a>
-    </nav>
-    </section>
+        <nav class="lineOver cleanCtaGroup">
+            <a href="contactUsPage.html" class="hoverCta">Contact us</a>
+            <a href="aboutUsPage.html" class="hoverCta">About us</a>
+        </nav>
+    </div>
 </footer>
 </body>
 </html>

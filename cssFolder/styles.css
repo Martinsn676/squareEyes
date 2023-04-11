@@ -217,7 +217,7 @@ footer nav{
     .bottomHeader, .topHeader{
         justify-content: center;
     }
-    header section{
+    header div{
         display: flex;
         align-items: center;
         justify-content: center;    }

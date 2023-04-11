@@ -8,43 +8,37 @@
     <meta name="description" content="Frozen 2 movie page on Square Eyes">
     <link href="cssFolder/styles.css" rel="stylesheet">
     <link href="cssFolder/product&checkout.css" rel="stylesheet">
-    <link href="cssFolder/editMode.css" rel="stylesheet">
-
 </head>
-
 <body>
-
 <header>
-    <section class="topHeader flexRow">
-        <section class="flexRow">
-            <a href="index.html"><img src="other/logo.png" id="headerLogo" class="hideMobile"></a>
+<div class="topHeader flexRow">
+    <div class="flexRow">
+        <a href="index.html"><img src="other/logo.png" id="headerLogo" class="hideMobile"  alt="Square Space logo"></a>
+    </div>
+    <nav class="headerLinks flexRow alignRow hideMobile cleanCtaGroup">
+        <a href="index.html">Home</a>
+        <a href="browsingPage.html">Browse</a>
+        <a href="browsingPage.html">Discover</a>
+        <a href="#">Friends</a>
+    </nav>
+    <nav class="headerIcons flexRow alignBotttom cleanCtaGroup">     
+        <a href="index.html" class="showMobile"><img src="icons/homeIcon.png" alt="">Home</a>
+        <a href="basketPage.html" class="hoverCta"><img src="icons/basketIcon.png" alt="">Basket</a>
+        <a href="index.html" class=""><img src="icons/libraryIcon.png" alt="">Library</a>
+        <a href="index.html" class=""><img src="icons/profileIcon.png" alt="">Profile</a>
+    </nav>
+</div>
+<div>
+    <nav class="bottomHeader flexRow alignRow">
+        <a href="#" class="cleanCta backButton hideMobile"><img src="Other/arrowLeft.png" id="arrowLeft" alt="">Back</a>
+        <a href="#" class="cleanCta editFilterButton">Edit Filter</a>
+        <section>
+            <input type="search" id="site-search" name="q" class="searchInput">
+            <button class="searchBackground"><img src="Other/searchIcon.png" id="searchIcon" alt=""></button>            
         </section>
-        <nav class="headerLinks flexRow alignRow hideMobile cleanCtaGroup">
-            <a href="index.html">Home</a>
-            <a href="browsingPage.html">Browse</a>
-            <a href="browsingPage.html">Discover</a>
-            <a href="#">Friends</a>
-        </nav>
-        <nav class="headerIcons flexRow alignBotttom cleanCtaGroup">     
-            <a href="index.html" class="showMobile"><img src="icons/homeIcon.png" alt="Home icon">Home</a>
-            <a href="basketPage.html" class="hoverCta"><img src="icons/basketIcon.png" alt="Basket icon">Basket</a>
-            <a href="index.html" class=""><img src="icons/libraryIcon.png" alt="Library icon">Library</a>
-            <a href="index.html" class=""><img src="icons/profileIcon.png" alt="Profile icon">Profile</a>
-        </nav>
-    </section>
-    <section>
-        <nav class="flexRow alignRow">
-            <a href="#" class="cleanCta backButton"><img src="Other/arrowLeft.png" id="arrowLeft">Back</a>
-            <a href="#" class="cleanCta editFilterButton">Edit Filter</a>
-            <div>
-                <input type="search" id="site-search" name="q" class="searchInput">
-                <button class="searchBackground"><img src="Other/searchIcon.png" id="searchIcon"></button>            
-            </div>
-        </nav>
-    </section>
-</section>
+    </nav>
+</div>
 </header>
-
 <main class="singleProductPage">  
 <section class="singleProduct">
     <img src="products/Frozen2.png" class="grid1" alt="The main characters with Elsa in the front, Frozen 2 cover"> 
@@ -80,19 +74,18 @@
     </section>
 </main>
 <footer>
-    <section class="footerClass">
-     <nav class="cleanCtaGroup">
-        <a href="#" class="hoverCta">Privacy</a>
-        <a href="#" class="hoverCta">Terms of Service</a>
-        <a href="#" class="hoverCta">Refunds</a>
-        <a href="#" class="hoverCta hideMobile">Questions and Answers</a>
-        
-     </nav>
-    <nav class="cleanCtaGroup">
-        <a href="infoPages/contactUsPage.html" class="hoverCta">Contact us</a>
-        <a href="infoPages/aboutUsPage.html" class="hoverCta">About us</a>
-    </nav>
-    </section>
+    <div class="footerClass">
+        <nav class="cleanCtaGroup">
+            <a href="#" class="hoverCta">Privacy</a>
+            <a href="#" class="hoverCta">Terms of Service</a>
+            <a href="#" class="hoverCta">Refunds</a>
+            <a href="#" class="hoverCta hideMobile">Questions and Answers</a>
+        </nav>
+        <nav class="lineOver cleanCtaGroup">
+            <a href="contactUsPage.html" class="hoverCta">Contact us</a>
+            <a href="aboutUsPage.html" class="hoverCta">About us</a>
+        </nav>
+    </div>
 </footer>
 </body>
 </html>
