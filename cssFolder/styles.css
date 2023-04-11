@@ -113,7 +113,7 @@ main{
 
 .headerIcons >*{
     height:8rem;
-    margin-left: 1rem;    }
+    margin:0 0.5rem;    }
 
 .headerIcons a{
     display: flex;
@@ -131,7 +131,7 @@ main{
 .searchInput {position: absolute;z-index: 1;padding: 5px 15px;width:18rem; }   
 .searchBackground {position: relative;z-index: 0;background-color:transparent;border:none; }
 #searchIcon{height: 33px;margin-top: 4px;background-color: #706F6F;height:20px;padding: 5px 5px 5px 18rem;border-radius: 5px;   }
-.backButton, .editFilterButton{padding: 5px 5px 5px 5px;height:20px;margin:2px;background-color: #706F6F;border-radius: 5px 5px 5px 5px;color:white;    }    
+.backButton, .editFilterButton{padding: 5px 5px;height:20px;margin:2px;background-color: #706F6F;border-radius: 5px 5px 5px 5px;color:white;    }    
 .backButton{border-radius: 50px 10px 10px 50px; }
 #arrowLeft{height: 15px;position: relative;bottom:-2px;    }
 
@@ -182,6 +182,11 @@ footer nav{
         margin:1rem 0;  }
     .frontPageDesign{
         max-width: 70rem;   }
+    .footerClass{
+        border-top: 1px solid black;
+        padding:1rem;
+    }
+    
 }
 
 @media only screen and (min-width:746px) and (max-width:985px){
@@ -201,11 +206,17 @@ footer nav{
         display: flex;
         flex-direction: row;}
     .frontPageInfo h1{
-        text-align: center;
+        text-align: center;}
+    .footerClass{
+        border-top: 1px solid black;
+        padding:1rem;
     }
 }
 
 @media only screen and (max-width:745px){
+    .bottomHeader, .topHeader{
+        justify-content: center;
+    }
     header section{
         display: flex;
         align-items: center;
@@ -217,9 +228,6 @@ footer nav{
 
     body .hideMobile{
         display: none;  }
-
-    header{
-        min-width: 385px;}
 
     header, main, footer{       
         width: 100%;    }
@@ -252,5 +260,10 @@ footer nav{
        width:20rem;
        font-size: 3rem;
        margin-top: 2rem;
+    }
+    .lineOver{
+        border-top: 1px solid black;
+        padding:1rem 3rem;
+        margin-top:1.5rem;
     }
 }
