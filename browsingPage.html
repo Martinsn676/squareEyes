@@ -9,35 +9,37 @@
     <link href="cssFolder/styles.css" rel="stylesheet">
 </head>
 <body>
-<header>
-    <div class="topHeader flexRow">
-        <div class="flexRow">
-            <a href="index.html"><img src="other/logo.png" id="headerLogo" class="hideMobile"  alt="Square Space logo"></a>
+    <header>
+        <div class="topHeader flexRow">
+            <div class="flexRow">
+                <a href="index.html"><img src="other/logo.png" id="headerLogo" class="hideMobile"  alt="Square Space logo"></a>
+            </div>
+            <nav class="headerLinks flexRow alignRow hideMobile cleanCtaGroup">
+                <a href="index.html">Home</a>
+                <a href="browsingPage.html">Browse</a>
+                <a href="browsingPage.html">Discover</a>
+                <a href="#">Friends</a>
+            </nav>
+            <nav class="headerIcons flexRow alignBotttom cleanCtaGroup">     
+                <a href="index.html" class="showMobile"><img src="icons/homeIcon.png" alt="">Home</a>
+                <a href="basketPage.html" class="hoverCta"><img src="icons/basketIcon.png" alt="">Basket</a>
+                <a href="index.html" class=""><img src="icons/libraryIcon.png" alt="">Library</a>
+                <a href="index.html" class="hideMobile"><img src="icons/profileIcon.png" alt="">Profile</a>
+                <a href="#" class="showMobile"><img src="icons/hamburgerIcon.png" alt="">Menu</a>
+    
+            </nav>
         </div>
-        <nav class="headerLinks flexRow alignRow hideMobile cleanCtaGroup">
-            <a href="index.html">Home</a>
-            <a href="browsingPage.html">Browse</a>
-            <a href="browsingPage.html">Discover</a>
-            <a href="#">Friends</a>
-        </nav>
-        <nav class="headerIcons flexRow alignBotttom cleanCtaGroup">     
-            <a href="index.html" class="showMobile"><img src="icons/homeIcon.png" alt="">Home</a>
-            <a href="basketPage.html" class="hoverCta"><img src="icons/basketIcon.png" alt="">Basket</a>
-            <a href="index.html" class=""><img src="icons/libraryIcon.png" alt="">Library</a>
-            <a href="index.html" class=""><img src="icons/profileIcon.png" alt="">Profile</a>
-        </nav>
-    </div>
-    <div>
-        <nav class="bottomHeader flexRow alignRow">
-            <a href="#" class="cleanCta backButton hideMobile"><img src="Other/arrowLeft.png" id="arrowLeft" alt="">Back</a>
-            <a href="#" class="cleanCta editFilterButton">Edit Filter</a>
-            <section>
-                <input type="search" id="site-search" name="q" class="searchInput">
-                <button class="searchBackground"><img src="Other/searchIcon.png" id="searchIcon" alt=""></button>            
-            </section>
-        </nav>
-    </div>
-</header>
+        <div>
+            <nav class="bottomHeader flexRow alignRow">
+                <a href="#" class="cleanCta backButton hideMobile"><img src="Other/arrowLeft.png" id="arrowLeft" alt="">Back</a>
+                <a href="#" class="cleanCta editFilterButton">Edit Filter</a>
+                <section>
+                    <input type="search" id="site-search" name="q" class="searchInput">
+                    <button class="searchBackground"><img src="Other/searchIcon.png" id="searchIcon" alt=""></button>            
+                </section>
+            </nav>
+        </div>
+    </header>
 <main>
     <section class="productDisplay hoverButton flexRow flexWrap opacityEntry">
         <div><a href="singleProductPage.html"><img src="products/Brave.png" alt="Young woman with curly hear and an armed bow, Brave cover"><h3>Brave</h3></a></div> 

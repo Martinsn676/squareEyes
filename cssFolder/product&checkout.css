@@ -1,5 +1,4 @@
 
-
 /* ===== Cart Page ====== */
 h1{
     text-align: center;}
@@ -9,7 +8,7 @@ h1{
     margin: 0 auto;}
 .cartVisualContent{
     margin:2rem 0 2rem 1.5rem;
-    overflow: hidden;}
+    overflow:scroll}
 .cartContent div{
     margin: 4px 2rem 0 2rem;
     min-width: 5rem;}
@@ -44,13 +43,13 @@ h1{
 
 .singleProductPage{
     max-width: 800px;
-    margin: var(--headerHeight) auto;}
+    margin: var(--headerHeight) auto 0 auto;}
 
 /* ========= PC screen ========= */
-@media only screen and (min-width:746px){
+@media only screen and (min-width:801px){
     .singleProduct{
         display: grid;
-        gap:10px;
+        gap:1rem;
         grid-template-areas:
         'grid1 grid4 grid5'
         'grid2 grid4 grid5'
@@ -67,21 +66,24 @@ h1{
 }*/
 
 /* ======= Mobile screen ======= */
-@media only screen and (max-width:745px){
+@media only screen and (max-width:800px){
     .singleProduct{
-        display: grid;
-        margin: 1rem 1rem;
-        gap:1rem;
+        display: grid; 
         grid-template-areas:
-        'grid1 grid4 .'
-        'grid1 grid3 .'
-        'grid2 grid2 .'
-        'grid5 grid5 grid5';}
+        '. grid1 grid4 .'
+        '. grid1 grid3 .'
+        '. grid2 grid2 .'
+        'grid5 grid5 grid5 grid5';}
     .singleProductPage .grid5/*description*/{
-        width: 100%;
-        margin-top: 0;}
-    .singleProductPage .grid2/*buttons*/{
-        flex-direction: row;}
+        margin: 0 1rem;}
+    .singleProductPage .grid2{
+        flex-direction: row;
+        margin: 1rem 0;}
+    .singleProduct .grid4{
+        margin-left: 1rem;
+    }
     .continueButton{
         margin:1rem auto;}
+    .singleProduct .grid2 a{
+        padding: 15px 5px;}
 }

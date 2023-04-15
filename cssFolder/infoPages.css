@@ -20,5 +20,5 @@ textarea#message{
     position: relative;
     left:14rem;
     width:11rem;}
-div p{
+.sendButton div{
     color: green;}
